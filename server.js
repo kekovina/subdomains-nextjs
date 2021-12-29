@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 const dev = process.env.VERCEL_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-const domain = dev ? 'lvh.me' : 'subdomains-nextjs.vercel.app'
+const domain = dev ? 'lvh.me' : 'localhost'
 
 app.prepare().then(() => {
 
